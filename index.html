@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Countdown</title>
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--CUSTOM STYLESHEET-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <div class="pos-f-t">
+        <nav class="navbar navbar-dark">
+            <a class="navbar-brand pl-4" href="index.html">Celestial Countdown</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4 text-right" id="toggled-menu">
+                <h5><a href="index.html">Home</a></h5>
+                <h5><a href="calendar.html">Event Calendar</a></h5>
+                <h5><a href="events.html">Event Descriptions</a></h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!--COUNTDOWN-->
+            <div class="col-sm-9 mt-5 text-center" id="countdown-bg">
+                <h4 class="mt-5" style="font-weight: 300;">Next Celestial Event...</h4>
+                <h1 style="color: #FFFFFF;" class="my-4">The Quadrantids Meteor Shower</h1>
+                
+                <div class="mt-5">
+                    <div class="container" >
+                        <div class="row mx-5 py-3" id="countdown">
+                            <div class="col-3">
+                                <h1 style="font-size: 4rem;">12</h1>
+                                <h5>DAYS</h5>
+                            </div>
+                            <div class="col-3">
+                                <h1 style="font-size: 4rem;">03</h1>
+                                <h5>HOURS</h5>
+                            </div>
+                            <div class="col-3">
+                                <h1 style="font-size: 4rem;">12</h1>
+                                <h5>MINUTES</h5>
+                            </div>
+                            <div class="col-3">
+                                <h1 style="font-size: 4rem;">48</h1>
+                                <h5>SECONDS</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container">
+                        <p class="mx-5 py-1" id="time-until">Time Until January 03, 2021 <u>Learn More</u></p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!--SIDEBAR-->
+            <div class="col-sm-3 mt-5" id="sidebar">
+                <div class="mt-3" id="search" style="background-color: #222222;color: #555555;">
+                    <img class="img-fluid ml-3 p-2" src="images/Search Icon.png">
+                    <span class="p-2">Search site...</span>
+                </div>
+
+                <div id="location" class="mt-4 p-3 text-center">
+                    <img class="img-fluid pr-3" src="images/Polygon 1.png">
+                    <span>San Rafael, California</span>
+                    <hr>
+                    <p class="my-4">Latitude: <span style="font-weight: 300;">37.980020</span></p>
+                    <p class="my-4">Longitude: <span style="font-weight: 300;">-122.510572</span></p>
+                    <p class="my-4">Timezone: <span style="font-weight: 300;">PST</span></p>
+                    
+                </div>
+
+                <div id="location-change" class="text-center my-4">
+                    <p class="py-2">Change Location</p>
+                </div>
+
+                <div id="view-map" class="text-center my-4">
+                    <p class="py-2">View Map</p>
+                </div>
+
+                <div id="view-calendar" class="text-center my-4">
+                    <p class="py-2">View Calendar</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9 text-center" id="upcoming-events">
+            <div class="row d-flex align-items-center justify-content-center mt-4">
+                <h4 class="mr-2">Upcoming Events </h4> <u href="#"> See Full Calendar</u>
+                
+            </div>
+            <div class="row d-flex align-items-center my-3">
+                <img src="images/v12_45.png" class="img-fluid mr-2">
+                <p style="font-size: 1.25rem;">The Quadrantids Meteor Shower</p>
+                <p class="text-muted ml-2">January 3rd - 4th, 2021 <u>Learn More</u></p>
+            </div>
+            <div class="row d-flex align-items-center my-3">
+                <img src="images/v12_48.png" class="img-fluid mr-2">
+                <p style="font-size: 1.25rem;">New Moon</p>
+                <p class="text-muted ml-2">January 13th, 2021 <u>Learn More</u></p>
+            </div>
+            <div class="row d-flex align-items-center my-3">
+                <img src="images/v12_49.png" class="img-fluid mr-2">
+                <p style="font-size: 1.25rem;">Mercury at Greatest Eastern Elongation</p>
+                <p class="text-muted ml-2">January 24th, 2021 <u>Learn More</u></p>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
