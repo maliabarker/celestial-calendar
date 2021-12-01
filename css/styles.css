@@ -17,7 +17,7 @@ nav {
 }
 
 #countdown-bg {
-    background-image: url(/images/bg.png);
+    background-image: url(/celestial-calendar/images/bg.png);
     background-size: contain;
     filter: brightness(60%);
     box-shadow: inset 4px 4px 4px rgba(18, 18, 18, 0.25);
