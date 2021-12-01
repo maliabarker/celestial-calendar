@@ -339,6 +339,10 @@
       { eventName: 'Jupiter at Opposition', calendar: 'Planetary Event', color: 'orange', date: '2021-08-19' },
       { eventName: 'Neptune at Opposition', calendar: 'Planetary Event', color: 'orange', date: '2021-09-14' },
       { eventName: 'Mercury at Greatest Eastern Elongation', calendar: 'Planetary Event', color: 'orange', date: '2021-09-14' },
+      { eventName: 'Mercury at Greatest Western Elongation', calendar: 'Planetary Event', color: 'orange', date: '2021-10-25' },
+      { eventName: 'Venus at Greatest Eastern Elongation', calendar: 'Planetary Event', color: 'orange', date: '2021-10-29' },
+      { eventName: 'Uranus at Opposition', calendar: 'Planetary Event', color: 'orange', date: '2021-11-05' },
+
   
       { eventName: 'New Moon', calendar: 'Moon Event', color: 'blue', date: '2021-01-13' },
       { eventName: 'Full Moon', calendar: 'Moon Event', color: 'blue', date: '2021-01-28' },
@@ -349,7 +353,8 @@
       { eventName: 'New Moon', calendar: 'Moon Event', color: 'blue', date: '2021-04-12' },
       { eventName: 'Full Moon, Supermoon', calendar: 'Moon Event', color: 'blue', date: '2021-04-27' },
       { eventName: 'New Moon', calendar: 'Moon Event', color: 'blue', date: '2021-05-11' },
-      { eventName: 'Total Lunar Eclipse, Full Moon, Supermoon', calendar: 'Moon Event', color: 'blue', date: '2021-05-26' },
+      { eventName: 'Full Moon, Supermoon', calendar: 'Moon Event', color: 'blue', date: '2021-05-26' },
+      { eventName: 'Total Lunar Eclipse', calendar: 'Moon Event', color: 'blue', date: '2021-05-26' },
       { eventName: 'New Moon', calendar: 'Moon Event', color: 'blue', date: '2021-06-10' },
       { eventName: 'Full Moon, Supermoon', calendar: 'Moon Event', color: 'blue', date: '2021-06-24' },
       { eventName: 'New Moon', calendar: 'Moon Event', color: 'blue', date: '2021-07-10' },
@@ -360,11 +365,18 @@
       { eventName: 'Full Moon', calendar: 'Moon Event', color: 'blue', date: '2021-09-20' },
       { eventName: 'New Moon', calendar: 'Moon Event', color: 'blue', date: '2021-10-06' },
       { eventName: 'Full Moon', calendar: 'Moon Event', color: 'blue', date: '2021-10-20' },
+      { eventName: 'New Moon', calendar: 'Moon Event', color: 'blue', date: '2021-11-04' },
+      { eventName: 'Full Moon', calendar: 'Moon Event', color: 'blue', date: '2021-11-19' },
+      { eventName: 'Partial Lunar Eclipse', calendar: 'Moon Event', color: 'blue', date: '2021-11-19' },
+      { eventName: 'New Moon', calendar: 'Moon Event', color: 'blue', date: '2021-12-04' },
+      { eventName: 'Full Moon', calendar: 'Moon Event', color: 'blue', date: '2021-12-19' },
   
       { eventName: 'March Equinox', calendar: 'Solar Event', color: 'yellow', date: '2021-03-20' },
       { eventName: 'Annual Solar Eclipse', calendar: 'Solar Event', color: 'yellow', date: '2021-06-10' },
       { eventName: 'June Solstice', calendar: 'Solar Event', color: 'yellow', date: '2021-06-21' },
       { eventName: 'September Equinox', calendar: 'Solar Event', color: 'yellow', date: '2021-09-22' },
+      { eventName: 'Total Solar Eclipse', calendar: 'Solar Event', color: 'yellow', date: '2021-12-04' },
+      { eventName: 'December Solstice', calendar: 'Solar Event', color: 'yellow', date: '2021-12-21' },
   
       { eventName: 'Quadrantids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-01-02' },
       { eventName: 'Quadrantids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-01-03' },
@@ -379,11 +391,14 @@
       { eventName: 'Draconids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-10-07' },
       { eventName: 'Orionids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-10-21' },
       { eventName: 'Orionids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-10-22' },
-
-
-      { eventName: 'Beep', calendar: 'Spacecraft Event', color: 'red', date: '2021-11-01' },
-
-      { eventName: 'Boop', calendar: 'Other', color: 'white', date: '2021-11-05'}
+      { eventName: 'Taurids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-11-04' },
+      { eventName: 'Taurids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-11-05' },
+      { eventName: 'Leonids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-11-17' },
+      { eventName: 'Leonids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-11-18' },
+      { eventName: 'Geminids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-12-13' },
+      { eventName: 'Geminids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-12-14' },
+      { eventName: 'Ursids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-12-21' },
+      { eventName: 'Ursids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-12-22' },
     ];
   
     

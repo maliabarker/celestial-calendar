@@ -38,12 +38,12 @@ nav {
 }
 
 #sidebar {
-    background-color: #2A2A2A;
+    background-color: rgba(255, 255, 255, 0.05);
     
 }
 
 #sidebar > div {
-    background-color: #555555;
+    background-color: rgba(255, 255, 255, 0.05);
     color: #c4c4c4;
 }
 
