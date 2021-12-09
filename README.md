@@ -1,3 +1,4 @@
+<pre>
   ___  ____  __    ____  ____  ____  __   __   __       ___  __   _  _  __ _  ____  ____   __   _  _  __ _ 
  / __)(  __)(  )  (  __)/ ___)(_  _)(  ) / _\ (  )     / __)/  \ / )( \(  ( \(_  _)(    \ /  \ / )( \(  ( \
 ( (__  ) _) / (_/\ ) _) \___ \  )(   )( /    \/ (_/\  ( (__(  O )) \/ (/    /  )(   ) D ((  O )\ /\ //    /
@@ -10,7 +11,7 @@
 /___/  ^/      ###\|/###  *    *            .      *   *
 |   ||%%(        # }|{  #
 |___|,  \\         }|{               
-
+</pre>
 
 Ever wondered what the next upcoming astronomical event is in your area?
 Ever miss an eclipse or a gorgeous meteor shower?
