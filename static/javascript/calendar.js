@@ -342,6 +342,7 @@
       { eventName: 'Mercury at Greatest Western Elongation', calendar: 'Planetary Event', color: 'orange', date: '2021-10-25' },
       { eventName: 'Venus at Greatest Eastern Elongation', calendar: 'Planetary Event', color: 'orange', date: '2021-10-29' },
       { eventName: 'Uranus at Opposition', calendar: 'Planetary Event', color: 'orange', date: '2021-11-05' },
+      { eventName: 'Mercury at Greatest Eastern Elongation', calendar: 'Planetary Event', color: 'orange', date: '2022-01-07' },
 
   
       { eventName: 'New Moon', calendar: 'Moon Event', color: 'blue', date: '2021-01-13' },
@@ -370,6 +371,8 @@
       { eventName: 'Partial Lunar Eclipse', calendar: 'Moon Event', color: 'blue', date: '2021-11-19' },
       { eventName: 'New Moon', calendar: 'Moon Event', color: 'blue', date: '2021-12-04' },
       { eventName: 'Full Moon', calendar: 'Moon Event', color: 'blue', date: '2021-12-19' },
+      { eventName: 'New Moon', calendar: 'Moon Event', color: 'blue', date: '2022-01-02' },
+      { eventName: 'Full Moon', calendar: 'Moon Event', color: 'blue', date: '2022-01-17' },
   
       { eventName: 'March Equinox', calendar: 'Solar Event', color: 'yellow', date: '2021-03-20' },
       { eventName: 'Annual Solar Eclipse', calendar: 'Solar Event', color: 'yellow', date: '2021-06-10' },
@@ -399,6 +402,8 @@
       { eventName: 'Geminids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-12-14' },
       { eventName: 'Ursids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-12-21' },
       { eventName: 'Ursids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2021-12-22' },
+      { eventName: 'Quadrantids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2022-01-03' },
+      { eventName: 'Quadrantids Meteor Shower', calendar: 'Meteors, Comets, & Asteroids', color: 'green', date: '2022-01-04' }
     ];
   
     var calendar = new Calendar('#calendar', data);

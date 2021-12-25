@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from flask_pymongo import pymongo
 import datetime
+from datetime import date, datetime
 
 CONNECTION_STRING = 'mongodb+srv://maliabarker:tpofbawf@cluster0.hllse.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 client = pymongo.MongoClient(CONNECTION_STRING)
@@ -22,8 +23,13 @@ def events_index():
     return render_template('events.html')
 
 def find_closest_date():
-    events.find({'date': $gte: 25})
-    # events.find( {{'date': { $gte: '2021, 12, 23' } }} )
+    date = events.find_one( { 'date': { '$gte': datetime.now() } } )
+    return date
+
+print(find_closest_date())
+# today = date.today()
+# print(today)
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5002)
