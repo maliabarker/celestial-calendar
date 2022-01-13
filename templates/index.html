@@ -56,6 +56,7 @@
                     <p class="my-4">Latitude: <span style="font-weight: 300;">{{ lat }}</span></p>
                     <p class="my-4">Longitude: <span style="font-weight: 300;">{{ lon }}</span></p>
                     <p class="my-4">Timezone: <span style="font-weight: 300;">{{ tz }}</span></p>
+                    <p id="test"></p>
                     
                 </div>
 
@@ -127,9 +128,6 @@
                 console.log('{{ json_str | tojson }}')
                 jstime = '{{ json_str | tojson }}'
                 jstz = '{{ json_tz_str | tojson }}'
-                jstz_mod = "'" + jstz.replace(/['"]+/g, '') + "'"
-                console.log('{{ json_tz_str | tojson }}')
-                console.log(jstz_mod)
                 
                 const second = 1000,
                     minute = second * 60,
@@ -151,9 +149,8 @@
                 const countDown = new Date(birthday).getTime(),
 
                 x = setInterval(function() {  
-                    
                     let options = {
-                    timeZone: 'America/Los_Angeles',
+                    timeZone: jstz.replace(/['"]+/g, ''),
                     year: 'numeric',
                     month: 'numeric',
                     day: 'numeric',

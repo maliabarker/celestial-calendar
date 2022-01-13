@@ -49,8 +49,10 @@ def index():
         timezone = pytz.timezone(result)
         d_aware = timezone.localize(dt)
         event_time = d_aware.strftime("%B %d, %Y %Z")
+        converted_result = result.replace("_", " ")
+        json_tz_str = json.dumps(result)
 
-    return render_template('index.html', time=time, event=event, json_str=json_str, events_desc=events_desc, city=city, lat=location.latitude, lon=location.longitude, tz=result, event_time=event_time, json_tz_str=json_tz_str)
+    return render_template('index.html', time=time, event=event, json_str=json_str, events_desc=events_desc, city=city, lat=location.latitude, lon=location.longitude, tz=converted_result, event_time=event_time, json_tz_str=json_tz_str)
 
 @app.route('/calendar')
 def calendar():
