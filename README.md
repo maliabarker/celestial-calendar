@@ -14,10 +14,14 @@
 </pre>
 
 <p align='center'>
+  ************************************************************************
   Ever wondered what the next upcoming astronomical event is in your area? <br>
   Ever miss an eclipse or a gorgeous meteor shower? <br>
-  Now you never have to search the internet for the next cool event again!
+  Now you never have to search the internet for the next cool event again! <br>
+  ************************************************************************
 </p>
+
+
 
 This is :ringed_planet::star2: **Celestial Countdown** :star2::ringed_planet:, a website that counts down to the next astronomical event. <br>
 
