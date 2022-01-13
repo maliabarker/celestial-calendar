@@ -13,15 +13,13 @@
 |___|,  \\         }|{               
 </pre>
 
-Ever wondered what the next upcoming astronomical event is in your area?
-Ever miss an eclipse or a gorgeous meteor shower?
+Ever wondered what the next upcoming astronomical event is in your area? <br>
+Ever miss an eclipse or a gorgeous meteor shower? <br>
 Now you never have to search the internet for the next cool event again!
 
-This is Celestial Countdown, a website that counts down to the next astronomical event.
-Check out the calendar for a simple way to find events for the month or the year.
-For more in-depth detail, check out the Event Descriptions and read all about these awesome things in the sky. 
+This is Celestial Countdown, a website that counts down to the next astronomical event. <br>
+With the ability to change your location, you are able to enter your city and see the countdown in your timezone—or play around and see what the countdown will be for a city across the world! <br>
+Check out the calendar for a simple way to find events for the month or the year. <br>
+For more in-depth details on your favorite events, check out the Event Descriptions and read all about these awesome things in the sky. <br>
 
-Available live on GitHub Pages: https://maliabarker.github.io/celestial-calendar/
-
-
-(Disclaimer: For viewing use only, location services, updates, etc. are not available at this time. Coming Soon!)
+Available live: https://celestial-countdown.herokuapp.com/
