@@ -36,7 +36,7 @@
                 </div>
                 <div>
                     <div class="container">
-                        <p class="mx-5 py-1" id="time-until">{{ time }}</p>
+                        <p class="mx-5 py-1" id="time-until">Time Until {{ event_time }}</p>
                     </div>
                 </div>
                 
@@ -50,17 +50,40 @@
                 </div>
 
                 <div id="location" class="mt-4 p-3 text-center">
-                    <img class="img-fluid pr-3" src="/static/images/Polygon 1.png">
-                    <span>San Rafael, California</span>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>{{ city }}</span>
                     <hr>
-                    <p class="my-4">Latitude: <span style="font-weight: 300;">37.980020</span></p>
-                    <p class="my-4">Longitude: <span style="font-weight: 300;">-122.510572</span></p>
-                    <p class="my-4">Timezone: <span style="font-weight: 300;">PST</span></p>
+                    <p class="my-4">Latitude: <span style="font-weight: 300;">{{ lat }}</span></p>
+                    <p class="my-4">Longitude: <span style="font-weight: 300;">{{ lon }}</span></p>
+                    <p class="my-4">Timezone: <span style="font-weight: 300;">{{ tz }}</span></p>
                     
                 </div>
 
                 <div id="location-change" class="text-center my-4">
-                    <p class="py-2"><a>Change Location</a></p>
+                    <p class="py-2"><a data-toggle="modal" data-target="#locationModal" href="">Change Location</a></p>
+                </div>
+
+                <div class="modal fade" id="locationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body pt-3">
+                                <button type="button" class="close pb-4" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" style="color: #797979;">&times;</span>
+                                </button>
+                                <form id="location-form" class="text-center" method="POST" action="/">
+                                    <div class="form-group pb-4">
+                                        <i class="fas fa-map-marker-alt"></i> <label for="location"> Enter Your City Below:</label>
+                                        <hr>
+                                        <input type="text" class="form-control" id="location" aria-describedby="location" name="city">
+                                    </div>
+                                </form>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" form="location-form" class="btn btn-primary mr-2">Change Location</button>
+                                    <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal">Back</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="view-map" class="text-center my-4">
@@ -75,7 +98,7 @@
         <div class="container">
             <div class="col-sm-9 text-center" id="upcoming-events">
                 <div class="row d-flex align-items-center justify-content-center mt-5">
-                    <h4 class="mr-2">Upcoming Events</h4> <u><a href="/calendar.html">See Full Calendar</a></u>
+                    <h4 class="mr-2">Upcoming Events</h4> <u><a href="/calendar">See Full Calendar</a></u>
                     
                 </div>
                 <hr style="background-color: aliceblue;">
@@ -86,7 +109,7 @@
                         <div class="col">
                             <div class="row justify-content-center">
                                 <p style="font-size: 1.25rem;">{{ event.eventName }}</p>
-                                <p class="text-muted ml-2">{{ event.date }}</p>
+                                <p class="text-muted ml-2">{{ event.dt }}</p>
                             </div>
                             <p>{{ event.description }}</p>
                         </div>
@@ -103,6 +126,11 @@
                 
                 console.log('{{ json_str | tojson }}')
                 jstime = '{{ json_str | tojson }}'
+                jstz = '{{ json_tz_str | tojson }}'
+                jstz_mod = "'" + jstz.replace(/['"]+/g, '') + "'"
+                console.log('{{ json_tz_str | tojson }}')
+                console.log(jstz_mod)
+                
                 const second = 1000,
                     minute = second * 60,
                     hour = minute * 60,
@@ -112,22 +140,39 @@
                     dd = String(today.getDate()).padStart(2, "0"),
                     mm = String(today.getMonth() + 1).padStart(2, "0"),
                     yyyy = today.getFullYear(),
-                    nextYear = yyyy + 1,
                     dayMonth = jstime,
                     birthday = dayMonth + yyyy;
                 
                 today = mm + "/" + dd + "/" + yyyy;
-                // if (today > birthday) {
-                // birthday = dayMonth + nextYear;
-                // }
-                //end
                 
-                const countDown = new Date(birthday).getTime(),
-                    x = setInterval(function() {    
-            
-                    const now = new Date().getTime(),
-                    distance = countDown - now;
+                
 
+
+                const countDown = new Date(birthday).getTime(),
+
+                x = setInterval(function() {  
+                    
+                    let options = {
+                    timeZone: 'America/Los_Angeles',
+                    year: 'numeric',
+                    month: 'numeric',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    second: 'numeric',
+                    },
+
+                    formatter = new Intl.DateTimeFormat([], options);
+                    let test = formatter.format(new Date())
+                    let test2 = new Date(test).getTime()
+
+                    console.log(test2)
+
+                    const now = new Date().getTime(),
+                    
+                    distance = countDown - test2;
+                    
+                    
                     document.getElementById("days").innerText = Math.floor(distance / (day)),
                     document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
                     document.getElementById("mins").innerText = Math.floor((distance % (hour)) / (minute)),
