@@ -14,7 +14,7 @@
 </pre>
 
 <p align='center'>
-  ************************************************************************
+  ************************************************************************ <br>
   Ever wondered what the next upcoming astronomical event is in your area? <br>
   Ever miss an eclipse or a gorgeous meteor shower? <br>
   Now you never have to search the internet for the next cool event again! <br>
