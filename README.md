@@ -13,13 +13,18 @@
 |___|,  \\         }|{               
 </pre>
 
-Ever wondered what the next upcoming astronomical event is in your area? <br>
-Ever miss an eclipse or a gorgeous meteor shower? <br>
-Now you never have to search the internet for the next cool event again!
+<p align='center'>
+  Ever wondered what the next upcoming astronomical event is in your area? <br>
+  Ever miss an eclipse or a gorgeous meteor shower? <br>
+  Now you never have to search the internet for the next cool event again!
+</p>
 
-This is :ringed_planet::star2: Celestial Countdown :star2::ringed_planet:, a website that counts down to the next astronomical event. <br>
+This is :ringed_planet::star2: **Celestial Countdown** :star2::ringed_planet:, a website that counts down to the next astronomical event. <br>
+
 :world_map: With the ability to change your location, you are able to enter your city and see the countdown in your timezone—or play around and see what the countdown will be for a city across the world! <br>
+
 :calendar: Check out the calendar for a simple way to find events for the month or the year. <br>
+
 :card_file_box: For more in-depth details on your favorite events, check out the Event Descriptions and read all about these awesome things in the sky. <br>
 
 Available live: https://celestial-countdown.herokuapp.com/
