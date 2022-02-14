@@ -6,8 +6,9 @@ import json
 from timezonefinder import TimezoneFinder
 from geopy.geocoders import Nominatim
 import pytz
+from env.password.password import password
 
-CONNECTION_STRING = 'mongodb+srv://maliabarker:tpofbawf@cluster0.hllse.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+CONNECTION_STRING = f'mongodb+srv://maliabarker:{password}@cluster0.hllse.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 client = pymongo.MongoClient(CONNECTION_STRING)
 
 geolocator = Nominatim(user_agent="geoapiExercises")
